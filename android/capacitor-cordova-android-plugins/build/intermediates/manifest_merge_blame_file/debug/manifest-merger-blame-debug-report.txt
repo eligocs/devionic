@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+3    xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="capacitor.android.plugins"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:15:1-62
+12-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:15:18-60
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:16:1-76
+13-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:16:18-74
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:17:1-75
+14-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:17:18-73
+15    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+15-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:18:1-78
+15-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:18:18-76
+16    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+16-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:19:1-67
+16-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:19:18-65
+17    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+17-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:20:1-69
+17-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:20:18-67
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:21:1-74
+18-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:21:18-72
+19
+20    <uses-feature
+20-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:22:1-83
+21        android:name="android.hardware.telephony"
+21-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:22:15-56
+22        android:required="false" />
+22-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:22:57-81
+23
+24    <application>
+24-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:5:1-14:15
+25        <provider
+25-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:1-8:12
+26            android:name="org.apache.cordova.camera.FileProvider"
+26-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:11-64
+27            android:authorities="${applicationId}.provider"
+27-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:65-112
+28            android:exported="false"
+28-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:113-137
+29            android:grantUriPermissions="true" >
+29-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:138-172
+30            <meta-data
+30-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:3-112
+31                android:name="android.support.FILE_PROVIDER_PATHS"
+31-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:14-64
+32                android:resource="@xml/camera_provider_paths" />
+32-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:65-110
+33        </provider>
+34
+35        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+35-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:9:1-73
+35-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:9:11-71
+36
+37        <provider
+37-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:1-12:12
+38            android:name="io.github.pwlin.cordova.plugins.fileopener2.FileProvider"
+38-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:11-82
+39            android:authorities="${applicationId}.provider"
+39-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:83-130
+40            android:exported="false"
+40-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:131-155
+41            android:grantUriPermissions="true" >
+41-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:156-190
+42            <meta-data
+42-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:3-112
+43                android:name="android.support.FILE_PROVIDER_PATHS"
+43-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:14-64
+44                android:resource="@xml/opener_paths" />
+44-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:65-110
+45        </provider>
+46
+47        <activity
+47-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:13:1-141
+48            android:name="de.niklasmerz.cordova.biometric.BiometricActivity"
+48-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:13:11-75
+49            android:exported="true"
+49-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:13:116-139
+50            android:theme="@style/TransparentTheme" />
+50-->D:\devrising\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:13:76-115
+51    </application>
+52
+53</manifest>

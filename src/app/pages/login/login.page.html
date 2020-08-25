@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/src/assets/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+<ion-content class=" ion-justify-content-center ion-align-items-center"  [fullscreen]="true" >
+  <div class="main_container">
+    <ion-grid class="header-sub">
+      <ion-row>
+        <ion-col>
+           <div class="logo-area">
+            <div class="logo_img ion-margin ion-text-center">
+              <img width="100" src="../../assets/imgs/logo.png" alt="">
+            </div>
+                <div class="header-text">
+             <h1>Welcome to <br> Dev Rising Nidhi Ltd.</h1>
+            </div>
+              </div>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+
+
+
+      <ion-card id="log_card" class="login_card {{clsaa}}">
+        <ion-card-header>
+          <ion-card-title class="ion-text-center login_title">Login</ion-card-title>
+        </ion-card-header>
+        <form #form="ngForm" >
+        <ion-item>
+          <ion-input  (ionFocus)="focusInput($event)" (ionBlur)="focusOut($event)"  [(ngModel)]="username" name="name" type="text" placeholder="Username" ngModel required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input  (ionFocus)="focusInput($event)" (ionBlur)="focusOut($event)"  [(ngModel)]="password" name="password" type="password" placeholder="Password" ngModel required></ion-input>
+        </ion-item>
+        <div class="btn_cover ion-text-center">
+         <button (click) = "doLogin()" class="ion-margin ion-align-center btn login_btn" >Login</button>
+         
+        </div>
+      </form>
+       </ion-card>
+  
+       <ion-grid>
+        <ion-row id="bot_part" class="bottom_part {{clsaa2}}">
+          <ion-col class="bottom_left">
+          <div class="form-group remember">
+              <input type="radio" class="form-control"><span>Remember Me</span>
+          </div>
+          </ion-col>
+          <ion-col class="bottom_right">
+            <div class=" forgot">
+                <p (click) = "ForgotPass()" class="forget-password"><a routerLink="forgot">Forgot Password</a></p>
+            </div>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+
+  </div>
+
+</ion-content>
+
+
+
+

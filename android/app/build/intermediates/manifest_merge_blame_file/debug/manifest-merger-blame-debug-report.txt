@@ -1,0 +1,380 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.ionic.starter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\devrising\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\devrising\android\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\devrising\android\app\src\main\AndroidManifest.xml:48:5-67
+13-->D:\devrising\android\app\src\main\AndroidManifest.xml:48:22-64
+14    <uses-permission android:name="android.permission.SEND_SMS" />
+14-->D:\devrising\android\app\src\main\AndroidManifest.xml:49:5-66
+14-->D:\devrising\android\app\src\main\AndroidManifest.xml:49:22-64
+15    <!-- Camera, Photos, input file -->
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->D:\devrising\android\app\src\main\AndroidManifest.xml:51:5-79
+16-->D:\devrising\android\app\src\main\AndroidManifest.xml:51:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->D:\devrising\android\app\src\main\AndroidManifest.xml:52:5-81
+17-->D:\devrising\android\app\src\main\AndroidManifest.xml:52:22-78
+18    <!-- Geolocation API -->
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->D:\devrising\android\app\src\main\AndroidManifest.xml:54:5-81
+19-->D:\devrising\android\app\src\main\AndroidManifest.xml:54:22-78
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->D:\devrising\android\app\src\main\AndroidManifest.xml:55:5-79
+20-->D:\devrising\android\app\src\main\AndroidManifest.xml:55:22-76
+21
+22    <uses-feature android:name="android.hardware.location.gps" />
+22-->D:\devrising\android\app\src\main\AndroidManifest.xml:56:5-66
+22-->D:\devrising\android\app\src\main\AndroidManifest.xml:56:19-63
+23    <!-- Network API -->
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->D:\devrising\android\app\src\main\AndroidManifest.xml:58:5-79
+24-->D:\devrising\android\app\src\main\AndroidManifest.xml:58:22-76
+25    <!-- Navigator.getUserMedia -->
+26    <!-- Video -->
+27    <uses-permission android:name="android.permission.CAMERA" />
+27-->D:\devrising\android\app\src\main\AndroidManifest.xml:61:5-65
+27-->D:\devrising\android\app\src\main\AndroidManifest.xml:61:22-62
+28    <!-- Audio -->
+29    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+29-->D:\devrising\android\app\src\main\AndroidManifest.xml:63:5-71
+29-->D:\devrising\android\app\src\main\AndroidManifest.xml:63:22-68
+30    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+30-->D:\devrising\android\app\src\main\AndroidManifest.xml:64:5-79
+30-->D:\devrising\android\app\src\main\AndroidManifest.xml:64:22-77
+31
+32    <uses-feature
+32-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-13:36
+33        android:name="android.hardware.camera"
+33-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-47
+34        android:required="false" />
+34-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-33
+35
+36    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+36-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-83
+36-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-80
+37    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+37-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-72
+37-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-69
+38    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+38-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-74
+38-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-71
+39
+40    <uses-feature
+40-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:36
+41        android:name="android.hardware.telephony"
+41-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-50
+42        android:required="false" />
+42-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-33
+43
+44    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+44-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:24:5-68
+44-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:24:22-65
+45    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+45-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:26:5-82
+45-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:26:22-79
+46
+47    <application
+47-->D:\devrising\android\app\src\main\AndroidManifest.xml:5:5-44:19
+48        android:allowBackup="true"
+48-->D:\devrising\android\app\src\main\AndroidManifest.xml:6:9-35
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\e5357b0b880d2be0ed83398576c19d42\core-1.2.0\AndroidManifest.xml:24:18-86
+50        android:debuggable="true"
+51        android:icon="@mipmap/ic_launcher"
+51-->D:\devrising\android\app\src\main\AndroidManifest.xml:7:9-43
+52        android:label="@string/app_name"
+52-->D:\devrising\android\app\src\main\AndroidManifest.xml:8:9-41
+53        android:roundIcon="@mipmap/ic_launcher_round"
+53-->D:\devrising\android\app\src\main\AndroidManifest.xml:9:9-54
+54        android:supportsRtl="true"
+54-->D:\devrising\android\app\src\main\AndroidManifest.xml:11:9-35
+55        android:theme="@style/AppTheme"
+55-->D:\devrising\android\app\src\main\AndroidManifest.xml:12:9-40
+56        android:usesCleartextTraffic="true" >
+56-->D:\devrising\android\app\src\main\AndroidManifest.xml:10:9-44
+57        <activity
+57-->D:\devrising\android\app\src\main\AndroidManifest.xml:14:9-33:20
+58            android:name="io.ionic.starter.MainActivity"
+58-->D:\devrising\android\app\src\main\AndroidManifest.xml:16:13-57
+59            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+59-->D:\devrising\android\app\src\main\AndroidManifest.xml:15:13-129
+60            android:label="@string/title_activity_main"
+60-->D:\devrising\android\app\src\main\AndroidManifest.xml:17:13-56
+61            android:launchMode="singleTask"
+61-->D:\devrising\android\app\src\main\AndroidManifest.xml:19:13-44
+62            android:theme="@style/AppTheme.NoActionBarLaunch" >
+62-->D:\devrising\android\app\src\main\AndroidManifest.xml:18:13-62
+63            <intent-filter>
+63-->D:\devrising\android\app\src\main\AndroidManifest.xml:21:13-24:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->D:\devrising\android\app\src\main\AndroidManifest.xml:22:17-69
+64-->D:\devrising\android\app\src\main\AndroidManifest.xml:22:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->D:\devrising\android\app\src\main\AndroidManifest.xml:23:17-77
+66-->D:\devrising\android\app\src\main\AndroidManifest.xml:23:27-74
+67            </intent-filter>
+68            <intent-filter>
+68-->D:\devrising\android\app\src\main\AndroidManifest.xml:26:13-31:29
+69                <action android:name="android.intent.action.VIEW" />
+69-->D:\devrising\android\app\src\main\AndroidManifest.xml:27:17-69
+69-->D:\devrising\android\app\src\main\AndroidManifest.xml:27:25-66
+70
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->D:\devrising\android\app\src\main\AndroidManifest.xml:28:17-76
+71-->D:\devrising\android\app\src\main\AndroidManifest.xml:28:27-73
+72                <category android:name="android.intent.category.BROWSABLE" />
+72-->D:\devrising\android\app\src\main\AndroidManifest.xml:29:17-78
+72-->D:\devrising\android\app\src\main\AndroidManifest.xml:29:27-75
+73
+74                <data android:scheme="@string/custom_url_scheme" />
+74-->D:\devrising\android\app\src\main\AndroidManifest.xml:30:17-68
+74-->D:\devrising\android\app\src\main\AndroidManifest.xml:30:23-65
+75            </intent-filter>
+76        </activity>
+77
+78        <provider
+79            android:name="androidx.core.content.FileProvider"
+79-->D:\devrising\android\app\src\main\AndroidManifest.xml:36:13-62
+80            android:authorities="io.ionic.starter.fileprovider"
+80-->D:\devrising\android\app\src\main\AndroidManifest.xml:37:13-64
+81            android:exported="false"
+81-->D:\devrising\android\app\src\main\AndroidManifest.xml:38:13-37
+82            android:grantUriPermissions="true" >
+82-->D:\devrising\android\app\src\main\AndroidManifest.xml:39:13-47
+83            <meta-data
+83-->D:\devrising\android\app\src\main\AndroidManifest.xml:40:13-42:64
+84                android:name="android.support.FILE_PROVIDER_PATHS"
+84-->D:\devrising\android\app\src\main\AndroidManifest.xml:41:17-67
+85                android:resource="@xml/file_paths" />
+85-->D:\devrising\android\app\src\main\AndroidManifest.xml:42:17-51
+86        </provider>
+87
+88        <service
+88-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
+89            android:name="com.getcapacitor.plugin.background.BackgroundTaskService"
+89-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-84
+90            android:exported="false" />
+90-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+91
+92        <receiver android:name="com.getcapacitor.plugin.notification.TimedNotificationPublisher" />
+92-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-100
+92-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:19-97
+93        <receiver android:name="com.getcapacitor.plugin.notification.NotificationDismissReceiver" />
+93-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-101
+93-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:19-98
+94
+95        <meta-data
+95-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-25:37
+96            android:name="firebase_messaging_auto_init_enabled"
+96-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-64
+97            android:value="false" />
+97-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-34
+98
+99        <service
+99-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-33:19
+100            android:name="com.getcapacitor.CapacitorFirebaseMessagingService"
+100-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-78
+101            android:stopWithTask="false" >
+101-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-41
+102            <intent-filter>
+102-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-32:29
+103                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+103-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:17-78
+103-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:25-75
+104            </intent-filter>
+105        </service>
+106
+107        <provider
+107-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-33:20
+108            android:name="org.apache.cordova.camera.FileProvider"
+108-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-66
+109            android:authorities="io.ionic.starter.provider"
+109-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-60
+110            android:exported="false"
+110-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-37
+111            android:grantUriPermissions="true" >
+111-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-47
+112            <meta-data
+112-->D:\devrising\android\app\src\main\AndroidManifest.xml:40:13-42:64
+113                android:name="android.support.FILE_PROVIDER_PATHS"
+113-->D:\devrising\android\app\src\main\AndroidManifest.xml:41:17-67
+114                android:resource="@xml/camera_provider_paths" />
+114-->D:\devrising\android\app\src\main\AndroidManifest.xml:42:17-51
+115        </provider>
+116
+117        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+117-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:9-82
+117-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:19-79
+118
+119        <provider
+119-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-45:20
+120            android:name="io.github.pwlin.cordova.plugins.fileopener2.FileProvider"
+120-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-84
+121            android:authorities="io.ionic.starter.provider"
+121-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-60
+122            android:exported="false"
+122-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-37
+123            android:grantUriPermissions="true" >
+123-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-47
+124            <meta-data
+124-->D:\devrising\android\app\src\main\AndroidManifest.xml:40:13-42:64
+125                android:name="android.support.FILE_PROVIDER_PATHS"
+125-->D:\devrising\android\app\src\main\AndroidManifest.xml:41:17-67
+126                android:resource="@xml/opener_paths" />
+126-->D:\devrising\android\app\src\main\AndroidManifest.xml:42:17-51
+127        </provider>
+128
+129        <activity
+129-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:9-50:55
+130            android:name="de.niklasmerz.cordova.biometric.BiometricActivity"
+130-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:13-77
+131            android:exported="true"
+131-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:13-36
+132            android:theme="@style/TransparentTheme" />
+132-->[:capacitor-cordova-android-plugins] D:\devrising\android\capacitor-cordova-android-plugins\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-52
+133        <activity
+133-->[com.github.exxbrain:android-biometric:0.4] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\198a0d1b1c2eb5a98cbc8cbec79a5715\jetified-android-biometric-0.4\AndroidManifest.xml:30:9-33:67
+134            android:name="com.exxbrain.android.biometric.DeviceCredentialHandlerActivity"
+134-->[com.github.exxbrain:android-biometric:0.4] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\198a0d1b1c2eb5a98cbc8cbec79a5715\jetified-android-biometric-0.4\AndroidManifest.xml:31:13-90
+135            android:exported="true"
+135-->[com.github.exxbrain:android-biometric:0.4] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\198a0d1b1c2eb5a98cbc8cbec79a5715\jetified-android-biometric-0.4\AndroidManifest.xml:32:13-36
+136            android:theme="@style/DeviceCredentialHandlerTheme" />
+136-->[com.github.exxbrain:android-biometric:0.4] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\198a0d1b1c2eb5a98cbc8cbec79a5715\jetified-android-biometric-0.4\AndroidManifest.xml:33:13-64
+137        <!--
+138             FirebaseMessagingService performs security checks at runtime,
+139             but set to not exported to explicitly avoid allowing another app to call it.
+140        -->
+141        <service
+141-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:28:9-34:19
+142            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+142-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:29:13-82
+143            android:exported="false" >
+143-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:30:13-37
+144            <intent-filter android:priority="-500" >
+144-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-32:29
+145                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+145-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:17-78
+145-->[:capacitor-android] D:\devrising\node_modules\@capacitor\android\capacitor\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:25-75
+146            </intent-filter>
+147        </service>
+148        <service
+148-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:35:9-41:19
+149            android:name="com.google.firebase.components.ComponentDiscoveryService"
+149-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:36:13-84
+150            android:directBootAware="true"
+150-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+151            android:exported="false" >
+151-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:37:13-37
+152            <meta-data
+152-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:38:13-40:85
+153                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+153-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:39:17-119
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec0d34db7bfab328a67bc775742a1d9e\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:40:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec6ed60bc769c1397d2bb4044e417511\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+156                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+156-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec6ed60bc769c1397d2bb4044e417511\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\ec6ed60bc769c1397d2bb4044e417511\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:32:13-34:85
+159                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+159-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:33:17-96
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:34:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-installations:16.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\a9f39591fd7e3606aa03e1dd4d0c2ad4\jetified-firebase-installations-16.0.0\AndroidManifest.xml:17:13-19:85
+162                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+162-->[com.google.firebase:firebase-installations:16.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\a9f39591fd7e3606aa03e1dd4d0c2ad4\jetified-firebase-installations-16.0.0\AndroidManifest.xml:18:17-127
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-installations:16.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\a9f39591fd7e3606aa03e1dd4d0c2ad4\jetified-firebase-installations-16.0.0\AndroidManifest.xml:19:17-82
+164        </service>
+165
+166        <receiver
+166-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:37:9-44:20
+167            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+167-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:38:13-78
+168            android:exported="true"
+168-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:39:13-36
+169            android:permission="com.google.android.c2dm.permission.SEND" >
+169-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:40:13-73
+170            <intent-filter>
+170-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:41:13-43:29
+171                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+171-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:42:17-81
+171-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\2af03360c2f1d9c4749c1d75a7057ee7\jetified-firebase-iid-20.1.1\AndroidManifest.xml:42:25-78
+172            </intent-filter>
+173        </receiver>
+174
+175        <provider
+175-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+176            android:name="com.google.firebase.provider.FirebaseInitProvider"
+176-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+177            android:authorities="io.ionic.starter.firebaseinitprovider"
+177-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+178            android:exported="false"
+178-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+179            android:initOrder="100" />
+179-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+180
+181        <activity
+181-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+182            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+182-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+183            android:exported="false"
+183-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+184            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+184-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+185
+186        <meta-data
+186-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+187            android:name="com.google.android.gms.version"
+187-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+188            android:value="@integer/google_play_services_version" />
+188-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+189
+190        <service
+190-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+191            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+191-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+192            android:exported="false" >
+192-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+193            <meta-data
+193-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+194                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+194-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+195                android:value="cct" />
+195-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+196        </service>
+197        <service
+197-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+198            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+198-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+199            android:exported="false"
+199-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+200            android:permission="android.permission.BIND_JOB_SERVICE" >
+200-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+201        </service>
+202
+203        <receiver
+203-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+204            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+204-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+205            android:exported="false" />
+205-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ECS Developer\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+206    </application>
+207
+208</manifest>

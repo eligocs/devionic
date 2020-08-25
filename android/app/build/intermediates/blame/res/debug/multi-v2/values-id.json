@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\devrising\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ECS Developer\\.gradle\\caches\\transforms-2\\files-2.1\\16661ddc2023778e43c04f5fa88ec727\\jetified-android-crop-1.0.0\\res\\values-id\\values-id.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "215,286,333,416,475",
+                        "endColumns": "70,46,82,58,54",
+                        "endOffsets": "281,328,411,470,525"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "100,171,218,301,360",
+                        "endColumns": "70,46,82,58,54",
+                        "endOffsets": "166,213,296,355,410"
+                    }
+                }
+            ]
+        }
+    ]
+}
